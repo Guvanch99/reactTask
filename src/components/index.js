@@ -1,0 +1,7 @@
+export {default as Header} from './layout/header'
+export {default as Nav} from  './layout/sidebar'
+export {default as Footer} from './layout/footer'
+export {default as Card} from './card'
+export {default as PlainText} from './plainText'
+export {default as MainArticle} from './mainArticle'
+export {default as CompArticle} from './compArticle'
