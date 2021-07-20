@@ -4,3 +4,8 @@
 .text {
   padding-left: 0.3rem;
 }
+.link {
+  @include flex(space-evenly);
+  @extend %links;
+  width: 14rem;
+}

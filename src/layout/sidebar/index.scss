@@ -1,0 +1,18 @@
+@import "../../styles/rootconfigure/common.scss";
+.sidebar {
+  display: flex;
+  background-color: $sidebar;
+  .menu {
+    @include flex(space-between);
+    flex-direction: column;
+    padding: 1.5em;
+    &__list {
+      list-style: none;
+    }
+    &__list-item {
+      padding: 0.5em;
+      @include flex(center);
+      flex-direction: column;
+    }
+  }
+}

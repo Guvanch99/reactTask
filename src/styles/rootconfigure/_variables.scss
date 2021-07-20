@@ -48,4 +48,8 @@ $CompGradient: linear-gradient(
   font-size: 1.3rem;
   cursor: pointer;
   width: 12rem;
+  color: $textWhite;
+  &:hover {
+    background-color: $hover;
+  }
 }

@@ -18,6 +18,10 @@ export const linktext={
         name:'opera'
     },
     {
+        link:'https://safari.com',
+        name:'safari'
+    },
+    {
         link:'https://yahoo.com',
         name:'yahoo'
     }],
