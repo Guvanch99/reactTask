@@ -1,5 +1,6 @@
 import { linktext } from "../../linkdata"
 import { PlainText } from ".."
+import './index.scss'
 const CompArticle = ({location}) => {
     return (
         <article className="complementory-article">

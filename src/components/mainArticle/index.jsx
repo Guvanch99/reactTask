@@ -1,5 +1,5 @@
 import { PlainText } from "../"
-
+import './index.scss'
 const MainArticle = ({location}) => {
     return (     
         <article className="main-article">

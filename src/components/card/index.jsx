@@ -1,4 +1,4 @@
-
+import './index.scss'
 const Card = ({name}) => {
     return (
         <div className="list">

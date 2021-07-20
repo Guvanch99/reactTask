@@ -6,3 +6,46 @@ $BigBackgroundColor: #cae5ff;
 $sidebar: #dbbbf5;
 $primary: #9c0d38;
 $hover: #fcc8b2;
+$MainGradient: linear-gradient(
+  to right bottom,
+  #769323,
+  #71a93b,
+  #65bf56,
+  #4fd575,
+  #12eb98
+);
+$CompGradient: linear-gradient(
+  to right bottom,
+  #e5311a,
+  #fd0048,
+  #ff0079,
+  #ff00b0,
+  #e712eb
+);
+%glassmorphismtomain {
+  background: rgba(62, 105, 217, 0.5);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(9px);
+  -webkit-backdrop-filter: blur(9px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+%glassmorphismtocomp {
+  background: rgba(54, 220, 183, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+%links {
+  text-decoration: none;
+  text-align: center;
+  color: $textWhite;
+  cursor: pointer;
+  background-color: $primary;
+  padding: 0.6rem;
+  font-size: 1.3rem;
+  cursor: pointer;
+  width: 12rem;
+}

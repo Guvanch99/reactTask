@@ -1,3 +1,12 @@
 @import "./rootconfigure/reset";
 @import "./rootconfigure/variables";
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+body {
+  background: linear-gradient(to right, #d3cce3, #e9e4f0);
+  width: 100vw;
+  height: 100vh;
+}
+.container {
+  max-width: 76rem;
+  margin: 0 auto;
+}

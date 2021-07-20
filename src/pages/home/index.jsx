@@ -1,9 +1,12 @@
-import {Header,Footer,Nav,Card,MainArticle,CompArticle} from '../../components'
+import {Card,MainArticle,CompArticle} from '../../components'
+import {Header,Footer,Nav} from '../../layout'
 import { linktext } from '../../linkdata'
+import './index.scss'
 const Home = () => {
     return (
      <>
      <Header/>
+     <div className='divider'>
      <Nav/>
             <section className="main">
                     <MainArticle location='center'/>
@@ -17,6 +20,7 @@ const Home = () => {
                         )
                     })}           
            </section>
+           </div>
      <Footer/>
      </>
 

@@ -1,5 +1,6 @@
 import {Link} from 'react-router-dom'
-import { linktext } from "../../../linkdata";
+import { linktext } from "../../linkdata";
+import './index.scss'
 const Nav = () => {
     return(
         <section className="sidebar">
