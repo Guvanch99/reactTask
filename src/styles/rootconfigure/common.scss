@@ -1,11 +1,37 @@
 @import "./mixins";
 @import "./reset";
 @import "./variables";
+@mixin tablet {
+  @media screen and (max-width: 50em) {
+    @content;
+  }
+}
+@mixin mobile {
+  @media screen and (max-width: 35em) {
+    @content;
+  }
+}
 .text {
   padding-left: 0.3rem;
+  @include mobile() {
+    display: none;
+  }
 }
 .link {
   @include flex(space-evenly);
   @extend %links;
   width: 14rem;
+  @include tablet() {
+    width: 10rem;
+    font-size: 1rem;
+  }
+  @include mobile() {
+    width: 4rem;
+    &:hover {
+      .text {
+        display: block;
+      }
+      width: 10rem;
+    }
+  }
 }

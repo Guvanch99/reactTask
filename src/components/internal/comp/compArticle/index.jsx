@@ -1,5 +1,5 @@
-import { linktext } from "../../linkdata"
-import { PlainText } from ".."
+import { linktext } from '../../../../linkdata'
+import PlainText from '../../../plainText'
 import './index.scss'
 const CompArticle = ({location}) => {
     return (
@@ -7,7 +7,7 @@ const CompArticle = ({location}) => {
         <div className={`complementory-article__content_${location}`}>
             {linktext.textBig.map((text,index)=>{
                 return(
-                    <PlainText key={index} size='big' name={text.text}/>
+                  <PlainText key={index} size='big' name={text.text}/>
                 )
             })}
             </div>

@@ -27,13 +27,13 @@ export const linktext={
     }],
     textsSmall:[
         {
-            text:'Home'
+            text:'top'
         },
         {
-            text:'Famiy'
+            text:'center'
         },
         {
-            text:'Job'
+            text:'bottom'
         }
 
     ],

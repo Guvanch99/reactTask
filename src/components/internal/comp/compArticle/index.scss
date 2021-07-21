@@ -1,0 +1,14 @@
+@import "../../../../styles/rootconfigure/common.scss";
+.complementory-article {
+  padding: 3rem;
+  margin: 1rem;
+  border-radius: 4rem;
+  @extend %glassmorphismtocomp;
+  &__content_column {
+    @include flex(center);
+    flex-wrap: wrap;
+    @include tablet() {
+      flex-direction: column;
+    }
+  }
+}

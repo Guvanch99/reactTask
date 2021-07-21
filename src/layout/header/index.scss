@@ -19,10 +19,20 @@
       text-align: center;
       color: $textWhite;
       font-size: 1.6rem;
+      @include tablet() {
+        font-size: 1rem;
+      }
     }
   }
   &__link {
     @include flex(space-evenly);
     @extend %links;
+    @include tablet() {
+      font-size: 1rem;
+      width: 10rem;
+    }
+    @include mobile() {
+      width: 4rem;
+    }
   }
 }

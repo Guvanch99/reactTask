@@ -2,6 +2,7 @@
 .sidebar {
   display: flex;
   background-color: $sidebar;
+  position: relative;
   .menu {
     @include flex(space-between);
     flex-direction: column;
@@ -13,6 +14,10 @@
       padding: 0.5em;
       @include flex(center);
       flex-direction: column;
+    }
+    &__list-item:last-child {
+      position: absolute;
+      bottom: 0;
     }
   }
 }

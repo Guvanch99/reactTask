@@ -1,6 +1,4 @@
 import './index.scss'
-const Plaintext = ({size,name}) => (
-    <h3 className={`text_container-${size}`}>{name}</h3>
+const PlainText = ({size,name}) => ( <p className={`text_container-${size}`}>{name}</p>
 )
-
-export default Plaintext
+export default PlainText

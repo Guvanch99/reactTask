@@ -1,5 +1,5 @@
-import {BrowserRouter as Router,Route,Switch} from "react-router-dom";
-import {Home} from './pages'
+import {BrowserRouter as Router,Route,Switch} from 'react-router-dom';
+import {Home,Error,Registration} from './pages'
 import './styles/style.scss'
 
 const App = () => {
@@ -8,7 +8,8 @@ const App = () => {
         <Router>
             <Switch>
                 <Route exact path='/' component={Home}/>
-  
+                <Route exact path='/registration' component={Registration}/>
+                <Route path='*' component={Error}/>
             </Switch>
         </Router>
         </div>
