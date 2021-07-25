@@ -1,0 +1,21 @@
+@import 'src/styles/rootconfigure/common.scss';
+
+.text_container-small {
+	@extend %textSmall;
+}
+.text_container-big {
+	@extend %textSmall;
+	margin: 1rem 3rem;
+	@include tablet() {
+		overflow: hidden;
+		text-overflow: ellipsis;
+		display: -webkit-box;
+		-webkit-line-clamp: 6;
+		-webkit-box-orient: vertical;
+		margin: 3rem 0;
+	}
+}
+.text_container-middle {
+	@extend %textSmall;
+	padding: 1rem 3rem;
+}

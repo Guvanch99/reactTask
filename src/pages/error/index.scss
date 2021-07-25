@@ -1,0 +1,9 @@
+.error {
+  display: flex;
+  justify-content: center;
+  margin-top: 30%;
+  &__text {
+    font-size: 5em;
+    color: blue;
+  }
+}

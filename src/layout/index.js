@@ -1,0 +1,5 @@
+export {default as Header} from './header'
+export {default as Nav} from  './sidebar'
+export {default as Footer} from './footer'
+export {default as MainSection} from './main-section'
+export {default as ExtraSection} from './extra-section'

@@ -1,0 +1,23 @@
+@import 'src/styles/rootconfigure/common.scss';
+
+.footer {
+	background-color: $headerFooter;
+	padding: 1rem;
+	display: flex;
+	max-width: 76rem;
+
+	&__link {
+		padding: 1rem;
+		display: inline-block;
+		@extend %links;
+		border-radius: 0.4rem;
+		@include tablet() {
+			width: 10rem;
+			font-size: 1rem;
+		}
+	}
+	&__text {
+		align-self: center;
+		margin: 0 auto;
+	}
+}
