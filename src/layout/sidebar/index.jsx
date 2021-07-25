@@ -1,25 +1,27 @@
-import {Link} from 'react-router-dom'
-import { linktext } from '../../linkdata';
+import { LINKS } from '../../data';
+
 import './index.scss'
-const Nav = () => {
-    return(
+
+const {links}=LINKS
+
+const Nav = () => (
         <section className="sidebar">
         <nav className="menu">
             <ul className="menu__list">
                 {
-                    linktext.links.map((item,index)=>{
-                        return(
-                            <li key={index} class="menu__list-item">
-                            <Link target="_blank" to={item.link} className='link'> <i className={`fab fa-${item.name}`}></i><span
-                                    className="text">{item.name.toUpperCase()}</span></Link>
-                             </li>
-                        )
-                    })
+                    links.map(({link,name})=>(
+                            <li key={name} class="menu__list-item">
+                            <a  href={link} className='link'> 
+                            <i className={`fab fa-${name}`}/>
+                            <span className="text">{name.toUpperCase()}</span>
+                            </a>
+                            </li>
+                         ))
                 }
              </ul>
         </nav>
     </section>
-    )
-}
+    
+)
 
 export default Nav;

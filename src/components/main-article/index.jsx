@@ -1,7 +1,9 @@
-import PlainText from '../../../plainText'
+import PlainText from '../plainText'
+
 import './index.scss'
-const MainArticle = ({location,count='one'}) => {
-    return (     
+
+const MainArticle = ({location,count='one'}) => 
+       (
         <article className={`main-article main-article_${location}`}>  
             {
             count==='one'? <PlainText size='small' name='SHOW OFF! We are coming Lets Go' />:(
@@ -11,7 +13,5 @@ const MainArticle = ({location,count='one'}) => {
              </>)          
         }
         </article>
-    )
-}
-
+       )
 export default MainArticle

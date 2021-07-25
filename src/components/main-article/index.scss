@@ -1,0 +1,17 @@
+@import 'src/styles/rootconfigure/common.scss';
+
+.main-article {
+	border-radius: 2rem;
+	height: 30em;
+	margin: 1rem 3rem;
+	max-width: 30em;
+	padding: 0 3em;
+	@extend %glassmorphismtomain;
+	&_center {
+		@include flex(center);
+	}
+	&_space {
+		@include flex(space-between);
+		flex-direction: column;
+	}
+}

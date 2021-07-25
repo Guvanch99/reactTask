@@ -1,0 +1,12 @@
+@import 'src/styles/rootconfigure/common.scss';
+
+.complementory {
+	background: $CompGradient;
+	padding: 3rem 5rem;
+	@include flex(center);
+	flex-direction: column;
+}
+.list {
+	@include flex(space-around);
+	flex-wrap: wrap;
+}

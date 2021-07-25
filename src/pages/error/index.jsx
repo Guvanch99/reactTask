@@ -1,5 +1,6 @@
 import { useEffect } from 'react'
 import { useHistory } from 'react-router-dom'
+
 import './index.scss'
 
 const Error = () => {
@@ -11,7 +12,7 @@ const Error = () => {
     }, [])
     return (
         <div className='error'>
-            <h1 className='error__text'>Oops you are wring page!</h1>
+            <h1 className='error__text'>Oops you are wrong page!</h1>
         </div>
     )
 }

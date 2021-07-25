@@ -1,11 +1,5 @@
-import React from 'react'
+import './index.scss'
 
-const Registration = () => {
-    return (
-        <div>
-            In the future
-        </div>
-    )
-}
+const Registration = () =>  <div>  In the future </div>
 
 export default Registration

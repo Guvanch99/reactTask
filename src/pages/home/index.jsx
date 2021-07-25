@@ -1,6 +1,7 @@
-import {Header,Footer,Nav} from '../../layout'
-import {Main,Comp} from '../../components'
+import {Header,Footer,Nav,MainSection,ExtraSection} from '../../layout'
+
 import './index.scss'
+
 const Home = () => {
     return (
      <>
@@ -8,8 +9,8 @@ const Home = () => {
      <div className='divider'>
      <Nav/>
         <div>
-        <Main/>
-        <Comp/>
+        <MainSection/>
+        <ExtraSection/>
         </div>
         </div>
      <Footer/>

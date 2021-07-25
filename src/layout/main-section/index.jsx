@@ -1,12 +1,13 @@
-import MainArticle from './mainArticle'
+import {MainArticle} from '../../components/'
+
 import './index.scss'
-const Main = () => {
-    return (
+
+const MainSection = () => (
         <section className='main'>
               <MainArticle location='center' />
               <MainArticle location='space' count='two'/>
         </section>
-    )
-}
+    
+)
 
-export default Main
+export default MainSection

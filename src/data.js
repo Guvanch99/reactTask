@@ -1,4 +1,4 @@
-export const linktext={
+export const LINKS={
    links:
    [ {
         link:'https://www.google.com',
@@ -24,8 +24,10 @@ export const linktext={
     {
         link:'https://yahoo.com',
         name:'yahoo'
-    }],
-    textsSmall:[
+    }]
+}
+export const DATA={
+    textSmall:[
         {
             text:'top'
         },
@@ -45,5 +47,4 @@ export const linktext={
             text:'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, alias neque aperiam, corrupti eos sit laudantiu atque nesciunt quia quae in autem exercitationem! Magnam autem veritatis possimus incidunt quas consequatur, molestiae et sed deserunt dignissimos natus ipsa illum unde nobis. in autem exercitationem! Magnam autem veritatis possimus incidunt quas consequatur,molestiae et sed deserunt dignissimos natus ipsa illum unde nobis.'
         }
     ]
-
 }
